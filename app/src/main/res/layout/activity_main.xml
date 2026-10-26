@@ -1,19 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FCE4EC"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imgContacto"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_camera"
+            android:scaleType="centerCrop"
+            android:background="#F8BBD0"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:text="País"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#880E4F"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinnerPais"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:text="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#880E4F"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:hint="Ingrese nombre (solo letras)"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:text="Teléfono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#880E4F"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:hint="Ingrese teléfono (solo números)"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:text="Nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#880E4F"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editNota"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:hint="Ingrese una nota"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botones con color rosa claro unificado -->
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Salvar Contacto"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F48FB1"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnContactosSalvados"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Contactos Salvados"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F48FB1"/>
+
+    </LinearLayout>
+</ScrollView>

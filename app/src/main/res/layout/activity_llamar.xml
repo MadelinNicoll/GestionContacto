@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnAtrasLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        android:backgroundTint="#455A64"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgLlamarContacto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="centerCrop"
+        android:background="#455A64"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/txtNumeroLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5049756433"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnDevolverLlamada"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Devolver Llamada"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#43A047"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
